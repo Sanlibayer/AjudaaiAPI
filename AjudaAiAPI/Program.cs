@@ -12,6 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddTransient<ICausesRepository, CausesRepository>();
 builder.Services.AddTransient<IStateRepository, StateRepository>();
 builder.Services.AddTransient<ICityRepository, CityRepository>();
+builder.Services.AddTransient<INgoRepository, NgoRepository>();
+
 
 builder.Services.AddSwaggerGen();
 
