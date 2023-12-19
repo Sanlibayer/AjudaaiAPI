@@ -1,5 +1,4 @@
 ﻿using AjudaAiAPI.Contracts.Repository;
-using AjudaAiAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AjudaAiAPI.Controllers
@@ -8,8 +7,9 @@ namespace AjudaAiAPI.Controllers
     [Route("causes")]
     public class CausesController : ControllerBase
     {
-        private readonly ICausesRepository _causesRepository;
-        public CausesController(ICausesRepository causesRepository)
+        private readonly IStateRepository _causesRepository;
+
+        public CausesController(IStateRepository causesRepository)
         {
             _causesRepository = causesRepository;
         }

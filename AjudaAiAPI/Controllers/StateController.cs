@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace AjudaAiAPI.Controllers
-
-
 {
     [ApiController]
     [Route("state")]
@@ -22,5 +20,4 @@ namespace AjudaAiAPI.Controllers
             return Ok(await _stateRepository.Get());
         }
     }
-
 }

@@ -10,6 +10,6 @@ namespace AjudaAiAPI.Contracts.Repository
         Task Delete(int id);
         Task<NgoEntity> GetById(int id);
         Task<IEnumerable<NgoEntity>> Get();
-
+        Task<TokenDTO> LogIn(LoginDTO ngo);
     }
 }
